@@ -32,11 +32,12 @@ jobs:
 
       - name: Build all
         run: |
-          qmake ./helloworld.pro -spec linux-g++
+          lrelease *.pro
+          qmake -spec linux-g++
           make -j8 
 
       - name: Upload build asserts
         uses: actions/upload-artifact@v3
         with:
           path: |
-            ./libhelloworld.so
+            ./libquickcomplete.so

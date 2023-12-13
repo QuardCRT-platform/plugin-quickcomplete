@@ -5,8 +5,11 @@ QT += core widgets
 INCLUDEPATH += $$PWD/plugininterface \
         $$PWD
 HEADERS = plugininterface/plugininterface.h \
-        helloworld.h
+        quickcomplete.h
 SOURCES = plugininterface/plugininterface.cpp \
-        helloworld.cpp
+        quickcomplete.cpp
+TRANSLATIONS = quickcomplete_zh_CN.ts \
+        quickcomplete_en_US.ts
+RESOURCES = quickcomplete.qrc
 
-TARGET = $$qtLibraryTarget(helloworld)
+TARGET = $$qtLibraryTarget(quickcomplete)

@@ -1,3 +1,3 @@
-# Plugin template
+# Plugin quickcomplete
 
-Plugin template repository for QuardCRT.
+Plug-in for QuardCRT to assist in quickly entering long commands.
