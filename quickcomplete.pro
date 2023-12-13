@@ -13,3 +13,7 @@ TRANSLATIONS = quickcomplete_zh_CN.ts \
 RESOURCES = quickcomplete.qrc
 
 TARGET = $$qtLibraryTarget(quickcomplete)
+
+unix:{
+    QMAKE_RPATHDIR=$ORIGIN
+}
