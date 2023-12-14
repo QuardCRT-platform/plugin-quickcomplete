@@ -1,0 +1,3 @@
+[submodule "plugininterface"]
+	path = plugininterface
+	url = ../plugininterface.git
