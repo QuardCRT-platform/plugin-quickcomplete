@@ -5,6 +5,7 @@
 
 #define PLUGIN_NAME    "Quick Complete"
 #define PLUGIN_VERSION "0.0.2"
+#define PLUGIN_WEBSITE "https://github.com/QuardCRT-platform/plugin-quickcomplete"
 
 class QuickComplete : public PluginInterface
 {
@@ -26,6 +27,7 @@ public:
     QMap<QString,void *> metaObject() {
         QMap<QString,void *> ret;
         ret.insert("QMenu", (void *)m_menu);
+        ret.insert("website", (void *)(&m_website));
         return ret;
     }
 
@@ -35,6 +37,7 @@ public:
 private:
     void quickCompleteListChanged();
     QMenu *m_menu;
+    QString m_website = QString(PLUGIN_WEBSITE);
     QAction *addQuickCompleteAction;
     QAction *removeQuickCompleteAction;
     QAction *clearQuickCompleteAction;
